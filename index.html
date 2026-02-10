@@ -1,14 +1,180 @@
 <!DOCTYPE html>
-<html>
-<head><title>Privacy Policy</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Accessibility DevTools</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --text-main: #1f2937;
+            --text-muted: #6b7280;
+            --bg: #f9fafb;
+            --card-bg: #ffffff;
+            --border: #e5e7eb;
+            --success: #10b981;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .wrapper {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 60px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 30px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            background-color: #ecfdf5;
+            color: var(--success);
+            padding: 6px 16px;
+            border-radius: 99px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            margin: 0;
+            color: #111827;
+        }
+
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 10px;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #111827;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            background-color: var(--primary);
+            margin-right: 12px;
+            border-radius: 2px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: #f3f4f6;
+            margin-bottom: 12px;
+            padding: 16px;
+            border-radius: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        li strong {
+            color: var(--primary);
+            min-width: 140px;
+            display: inline-block;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 640px) {
+            .card { padding: 30px; }
+            h1 { font-size: 1.75rem; }
+            li { flex-direction: column; }
+            li strong { margin-bottom: 4px; }
+        }
+    </style>
+</head>
 <body>
-    <h1>Privacy Policy for Accessibility DevTools</h1>
-    <p><strong>Effective Date:</strong> February 2026</p>
-    <p>This extension is a local developer tool. It does not collect, store, or transmit any user data.</p>
-    <ul>
-        <li><strong>Website Content:</strong> Read locally to analyze accessibility.</li>
-        <li><strong>User Activity:</strong> Monitored locally to debug event listeners.</li>
-        <li><strong>No Backend:</strong> No data ever leaves your machine.</li>
-    </ul>
+
+<div class="wrapper">
+    <div class="card">
+        <div class="header">
+            <span class="badge">✓ 100% Private & Local</span>
+            <h1>Privacy Policy</h1>
+            <p class="meta">Accessibility DevTools • Effective February 2026</p>
+        </div>
+
+        <p>This Privacy Policy describes how we handle information in the <strong>Accessibility DevTools</strong> Chrome Extension. We believe that developer tools should be transparent, lightweight, and respect your privacy.</p>
+
+        <h2>Core Privacy Principle</h2>
+        <p>This extension is built to run entirely in your local browser environment. <strong>We do not collect, store, or transmit any data to external servers.</strong> There is no backend, no tracking, and no analytics.</p>
+
+        <h2>Data Access & Usage</h2>
+        <ul>
+            <li>
+                <strong>Website Content</strong>
+                <span>Accessed locally to analyze DOM elements for ARIA compliance and accessibility standards. This data never leaves your browser.</span>
+            </li>
+            <li>
+                <strong>User Activity</strong>
+                <span>Monitored within the active tab to help you debug event listeners and user interactions in real-time.</span>
+            </li>
+            <li>
+                <strong>Local Storage</strong>
+                <span>Any settings you toggle are stored locally in your browser's <code>chrome.storage</code> and are not synced to any cloud service.</span>
+            </li>
+        </ul>
+
+        <h2>No Third-Party Sharing</h2>
+        <p>Because we do not collect any data, we have nothing to share, sell, or trade with third parties. Your code and your browsing habits remain yours alone.</p>
+
+        <h2>Contact & Support</h2>
+        <p>If you have questions about the extension or the way it handles data, please open an issue on the official GitHub repository or contact us via the Chrome Web Store support tab.</p>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Accessibility DevTools. Built for developers by developers.
+    </div>
+</div>
+
 </body>
 </html>
